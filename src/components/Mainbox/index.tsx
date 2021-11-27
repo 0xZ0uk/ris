@@ -2,6 +2,7 @@ import React from "react";
 import {
   MainboxBallEmpty,
   MainboxBallFull,
+  MainboxChildrenContainer,
   MainboxContainer,
   MainboxContainerShadow,
   MainboxDivider,
@@ -51,7 +52,7 @@ const Mainbox = ({
           </div>
           <MainboxDivider style={{ backgroundColor: borderColor }} />
         </MainboxTitleContainer>
-        <div>{children}</div>
+        <MainboxChildrenContainer>{children}</MainboxChildrenContainer>
       </MainboxContainer>
       <MainboxContainerShadow style={{ borderColor: borderColor }} />
     </div>

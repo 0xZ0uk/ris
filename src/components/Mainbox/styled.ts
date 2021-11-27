@@ -47,3 +47,9 @@ export const MainboxBallEmpty = styled("div")({
   borderRadius: "100%",
   boxSizing: "border-box",
 });
+
+export const MainboxChildrenContainer = styled("div")({
+  display: "flex",
+  margin: "0 3%",
+  color: "#fff",
+});
