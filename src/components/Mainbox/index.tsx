@@ -25,7 +25,7 @@ const Mainbox = ({
   children,
 }: Props) => {
   return (
-    <div style={{ marginTop: 100 }} id={menuAnchor}>
+    <div style={{ margin: "150px 0" }} id={menuAnchor}>
       <MainboxContainer style={{ borderColor: borderColor }}>
         <MainboxTitleContainer>
           <div

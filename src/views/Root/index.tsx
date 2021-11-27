@@ -13,10 +13,10 @@ const altColors = {
 const Root = () => {
   return (
     <Layout>
-      <Row>
+      <Row style={{ borderBottom: "1px solid #fff" }}>
         <Hero />
       </Row>
-      <Row>
+      <Row style={{ borderBottom: "1px solid #fff" }}>
         <Col md={2} />
         <Col md={8} lg={8}>
           <Mainbox title="Quem Somos" menuAnchor="quemSomos">
@@ -43,6 +43,11 @@ const Root = () => {
               </p>
             </div>
           </Mainbox>
+        </Col>
+      </Row>
+      <Row style={{ borderBottom: "1px solid #fff" }}>
+        <Col md={2} />
+        <Col md={8} lg={8}>
           <Mainbox title="Missão" menuAnchor="missao" {...altColors}>
             <div style={{ width: "70%", color: colors.primary }}>
               <p
@@ -67,6 +72,11 @@ const Root = () => {
               </p>
             </div>
           </Mainbox>
+        </Col>
+      </Row>
+      <Row style={{ borderBottom: "1px solid #fff" }}>
+        <Col md={2} />
+        <Col md={8} lg={8}>
           <Mainbox title="Jogo" menuAnchor="jogo">
             <div style={{ width: "50%", color: colors.secondary }}>
               <p
@@ -91,6 +101,11 @@ const Root = () => {
               </p>
             </div>
           </Mainbox>
+        </Col>
+      </Row>
+      <Row style={{ borderBottom: "1px solid #fff" }}>
+        <Col md={2} />
+        <Col md={8} lg={8}>
           <Mainbox title="Parceiros" menuAnchor="parceiros" {...altColors}>
             {" "}
           </Mainbox>
