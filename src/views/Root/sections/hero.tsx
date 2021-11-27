@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col } from "react-grid-system";
+import { Col } from "react-grid-system";
 import Logo from "../../../assets/Logo-01.png";
 
 const Hero = () => {
