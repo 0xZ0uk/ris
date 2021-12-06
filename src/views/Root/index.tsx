@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Row } from "react-grid-system";
+import { Col, Hidden, Row } from "react-grid-system";
 import Divider from "../../components/Divider";
 import Layout from "../../components/Layout";
 import Mainbox from "../../components/Mainbox";
@@ -19,7 +19,7 @@ const altColors = {
 const Root = () => {
   return (
     <Layout>
-      <Row  style={{ borderBottom: "1px solid #fff" }}>
+      <Row  style={{ minHeight: 380, borderBottom: "1px solid #ffffffbb" }}>
         <Hero />
       </Row>      
       <Row id="quemSomos">
@@ -79,10 +79,10 @@ const Root = () => {
       <Row>
         <Col xs={10} md={8} offset={{ xs: 1, md: 2}}>
           <Mainbox title="Parceiros" containerMargin={"90px"} {...altColors} >
-            <>
-              <div style={{ width: "50%", display: 'flex', alignItems: 'center' }}><Partner name="IPL" enabledImage={IplEnabled} disabledImage={IplDisabled} /></div>
-              <div style={{ width: "50%", display: 'flex', alignItems: 'center' }}><Partner name="Start-up Leiria" enabledImage={SUEnabled} disabledImage={SUDisabled} /></div>
-            </>
+            <Hidden xs sm><div style={{ width: "50%", display: 'flex', alignItems: 'center' }}><Partner name="IPL" enabledImage={IplEnabled} disabledImage={IplDisabled} /></div></Hidden>
+            <Hidden xs sm><div style={{ width: "50%", display: 'flex', alignItems: 'center' }}><Partner name="Start-up Leiria" enabledImage={SUEnabled} disabledImage={SUDisabled} /></div></Hidden>
+            <Hidden md lg xl xxl><div style={{ width: "100%", display: 'flex', alignItems: 'center', marginTop: 20 }}><Partner name="IPL" enabledImage={IplEnabled} disabledImage={IplDisabled} /></div></Hidden>
+            <Hidden md lg xl xxl><div style={{ width: "100%", display: 'flex', alignItems: 'center', marginTop: 40  }}><Partner name="Start-up Leiria" enabledImage={SUEnabled} disabledImage={SUDisabled} /></div></Hidden>
           </Mainbox>
         </Col>
       </Row>

@@ -15,8 +15,8 @@ const Divider = ({
       <StarContainer style={{ float: alignment }}>
         <Star src={star} alt="star-divider" />
         <Star src={star} alt="star-divider" />
-        <Star src={star} alt="star-divider" />
         <Hidden xs><Star src={star} alt="star-divider" /></Hidden>
+        <Hidden xs sm><Star src={star} alt="star-divider" /></Hidden>
         <Hidden xs sm><Star src={star} alt="star-divider" /></Hidden>
       </StarContainer>
     </DividerLine>

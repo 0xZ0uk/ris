@@ -14,7 +14,7 @@ export const MainboxContainerShadow = styled("div")({
   position: "relative",
   top: -30,
   left: -30,
-  width: "102%",
+  width: "100%",
   minHeight: "520px",
   border: "5px solid white",
   borderRadius: 5,
@@ -50,6 +50,8 @@ export const MainboxBallEmpty = styled("div")({
 
 export const MainboxChildrenContainer = styled("div")({
   display: "flex",
+  flexDirection: "row",
+  flexWrap: "wrap",
   margin: "0 3%",
   color: "#fff",
 });
