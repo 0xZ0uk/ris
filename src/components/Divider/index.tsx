@@ -3,12 +3,14 @@ import { DividerLine, Star, StarContainer } from './styled';
 import star from "../../assets/star.png"
 
 const Divider = ({
-  alignment = "left"
+  alignment = "left",
+  id,
 }: {
   alignment?: any
+  id?: string
 }) => {
   return (
-    <DividerLine>
+    <DividerLine id={id}>
       <StarContainer style={{ float: alignment }}>
         <Star src={star} alt="star-divider" />
         <Star src={star} alt="star-divider" />

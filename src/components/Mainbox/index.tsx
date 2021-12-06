@@ -15,6 +15,7 @@ interface Props {
   menuAnchor?: string;
   borderColor?: string;
   textColor?: string;
+  containerMargin?: string;
 }
 
 const Mainbox = ({
@@ -22,6 +23,7 @@ const Mainbox = ({
   borderColor = "#e2ac00",
   textColor = "#8c18e8",
   menuAnchor = "mainbox",
+  containerMargin,
   children,
 }: Props) => {
   return (
@@ -52,7 +54,7 @@ const Mainbox = ({
           </div>
           <MainboxDivider style={{ backgroundColor: borderColor }} />
         </MainboxTitleContainer>
-        <MainboxChildrenContainer>{children}</MainboxChildrenContainer>
+        <MainboxChildrenContainer style={{ marginTop: containerMargin }}>{children}</MainboxChildrenContainer>
       </MainboxContainer>
       <MainboxContainerShadow style={{ borderColor: borderColor }} />
     </div>
