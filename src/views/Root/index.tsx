@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Row } from "react-grid-system";
+import Divider from "../../components/Divider";
 import Layout from "../../components/Layout";
 import Mainbox from "../../components/Mainbox";
 import { colors } from "../../utils/constants";
@@ -13,10 +14,10 @@ const altColors = {
 const Root = () => {
   return (
     <Layout>
-      <Row style={{ borderBottom: "1px solid #fff" }}>
+      <Row  style={{ borderBottom: "1px solid #fff" }}>
         <Hero />
-      </Row>
-      <Row style={{ borderBottom: "1px solid #fff" }}>
+      </Row>      
+      <Row>
         <Col md={2} />
         <Col md={8} lg={8}>
           <Mainbox title="Quem Somos" menuAnchor="quemSomos">
@@ -44,8 +45,9 @@ const Root = () => {
             </div>
           </Mainbox>
         </Col>
+        <Divider />
       </Row>
-      <Row style={{ borderBottom: "1px solid #fff" }}>
+      <Row>
         <Col md={2} />
         <Col md={8} lg={8}>
           <Mainbox title="Missão" menuAnchor="missao" {...altColors}>
@@ -73,8 +75,9 @@ const Root = () => {
             </div>
           </Mainbox>
         </Col>
+        <Divider alignment="right" />
       </Row>
-      <Row style={{ borderBottom: "1px solid #fff" }}>
+      <Row>
         <Col md={2} />
         <Col md={8} lg={8}>
           <Mainbox title="Jogo" menuAnchor="jogo">
@@ -102,8 +105,9 @@ const Root = () => {
             </div>
           </Mainbox>
         </Col>
+        <Divider />
       </Row>
-      <Row style={{ borderBottom: "1px solid #fff" }}>
+      <Row>
         <Col md={2} />
         <Col md={8} lg={8}>
           <Mainbox title="Parceiros" menuAnchor="parceiros" {...altColors}>

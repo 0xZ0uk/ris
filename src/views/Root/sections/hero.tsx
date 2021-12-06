@@ -1,6 +1,6 @@
 import React from "react";
 import { Col } from "react-grid-system";
-import Logo from "../../../assets/Logo-01.png";
+import Logo from "../../../assets/logo_anim.gif";
 
 const Hero = () => {
   return (
