@@ -1,4 +1,5 @@
 import React from "react";
+import { Hidden } from "react-grid-system";
 import {
   MainboxBallEmpty,
   MainboxBallFull,
@@ -44,12 +45,14 @@ const Mainbox = ({
               style={{
                 display: "flex",
                 justifyContent: "space-between",
-                width: "10%",
+                width: "13%",
               }}
             >
-              <MainboxBallEmpty style={{ borderColor: textColor }} />
-              <MainboxBallFull style={{ backgroundColor: textColor }} />
-              <MainboxBallFull style={{ backgroundColor: textColor }} />
+              <Hidden xs sm>
+                <MainboxBallEmpty style={{ borderColor: textColor }} />
+                <MainboxBallFull style={{ backgroundColor: textColor }} />
+                <MainboxBallFull style={{ backgroundColor: textColor }} />
+              </Hidden>
             </div>
           </div>
           <MainboxDivider style={{ backgroundColor: borderColor }} />
